@@ -863,8 +863,8 @@ class DeepEvalService:
         return {
             "deepeval_available": deepeval_available,
             "deepeval_version": deepeval_version,
-            "openai_configured": bool(settings.openai_api_key),
-            "anthropic_configured": bool(settings.anthropic_api_key),
+            # "openai_configured": bool(settings.openai_api_key),
+            # "anthropic_configured": bool(settings.anthropic_api_key),
             "google_configured": bool(settings.google_api_key),
-            "supported_metrics": len(self._metric_registry),
+            # "supported_metrics": len(self._metric_registry),
         }
