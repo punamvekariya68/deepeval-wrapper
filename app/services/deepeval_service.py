@@ -94,14 +94,14 @@ class DeepEvalService:
     
     def _setup_environment(self):
         """Set up environment variables for LLM providers."""
-        if settings.openai_api_key:
-            os.environ["OPENAI_API_KEY"] = settings.openai_api_key
-        if settings.anthropic_api_key:
-            os.environ["ANTHROPIC_API_KEY"] = settings.anthropic_api_key
+        # if settings.openai_api_key:
+        #     os.environ["OPENAI_API_KEY"] = settings.openai_api_key
+        # if settings.anthropic_api_key:
+        #     os.environ["ANTHROPIC_API_KEY"] = settings.anthropic_api_key
         if settings.google_api_key:
             os.environ["GOOGLE_API_KEY"] = settings.google_api_key
-        if settings.cohere_api_key:
-            os.environ["COHERE_API_KEY"] = settings.cohere_api_key
+        # if settings.cohere_api_key:
+        #     os.environ["COHERE_API_KEY"] = settings.cohere_api_key
         if settings.deepeval_api_key:
             os.environ["DEEPEVAL_API_KEY"] = settings.deepeval_api_key
     
