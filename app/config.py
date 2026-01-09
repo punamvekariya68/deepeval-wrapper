@@ -34,10 +34,10 @@ class Settings(BaseSettings):
     deepeval_api_key: Optional[str] = os.getenv("DEEPEVAL_API_KEY")
     
     # LLM Provider API Keys
-    openai_api_key: Optional[str] = os.getenv("OPENAI_API_KEY")
-    anthropic_api_key: Optional[str] = os.getenv("ANTHROPIC_API_KEY")
+    # openai_api_key: Optional[str] = os.getenv("OPENAI_API_KEY")
+    # anthropic_api_key: Optional[str] = os.getenv("ANTHROPIC_API_KEY")
     google_api_key: Optional[str] = os.getenv("GOOGLE_API_KEY")
-    cohere_api_key: Optional[str] = os.getenv("COHERE_API_KEY")
+    # cohere_api_key: Optional[str] = os.getenv("COHERE_API_KEY")
     
     # Redis Configuration (optional)
     use_redis: bool = os.getenv("USE_REDIS", "false").lower() == "true"
